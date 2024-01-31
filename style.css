@@ -2,3 +2,8 @@ button{
     padding: auto;
     font-size: x-large;
 }
+
+label{
+    /* display: inline-block; */
+    font-size: x-large;
+}
