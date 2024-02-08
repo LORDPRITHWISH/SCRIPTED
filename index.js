@@ -119,3 +119,15 @@ switch (day) {
         console.log('no no nooo')
         break;
 }
+
+console.log(1=='1')
+console.log(1==='1')
+console.log(1+'1')
+console.log('1'+1)
+console.log('1'+'1')
+console.log(1+'1'+'1')
+console.log(2*'1'*'5')
+console.log(2*'1'+'5')
+console.log('1'+ +'5'+ +2);
+console.log(1+ +'5'+ +2);
+console.log(3 + + "3"); // Outputs: 6
