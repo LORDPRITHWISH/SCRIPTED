@@ -1,9 +1,19 @@
 button{
     padding: auto;
-    font-size: x-large;
+    font-size: xx-large;
+    margin-top: 45px;
+    display: block;
+    
 }
 
 label{
     /* display: inline-block; */
     font-size: x-large;
 }
+body{
+    background-color: rgb(3, 1, 27);
+    color: rgb(145, 156, 255);
+    align-items: center;
+    text-align: center;
+}
+

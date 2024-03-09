@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LORD PRITHWISH</title>
+    <link rel="icon" type="image/jpg" href="pic/letter_p_PNG121.png">
+    <link rel="stylesheet" href="temperature.css">
+</head>
+<body>
+    <h1>LORD PRITHWISH</h1>
+    <hr>
+    <form>
+        <h1 id="tit">TEMPERATURE CONVERTER</h1>
+        <input type="number" id="tempbox" value="0"><br>
+
+        <input type="radio" id="tofar" name="unit">
+        <label for="tofar">CELCIUS ➡️ FARENHEIT</label>
+        <br>
+        <input type="radio" id="tocel" name="unit">
+        <label for="tocel">FARENHEIT ➡️ CELCIUS</label>
+        <br>
+
+        <button type="button" onclick="convert()">SUBMIT</button>
+
+        <p id="result">select a unit</p>
+
+    </form>
+    
+
+    <script src="temperature.js"></script>
+</body>
+</html>

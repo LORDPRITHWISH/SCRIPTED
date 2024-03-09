@@ -120,14 +120,32 @@ switch (day) {
         break;
 }
 
-console.log(1=='1')
-console.log(1==='1')
-console.log(1+'1')
-console.log('1'+1)
-console.log('1'+'1')
-console.log(1+'1'+'1')
-console.log(2*'1'*'5')
-console.log(2*'1'+'5')
-console.log('1'+ +'5'+ +2);
-console.log(1+ +'5'+ +2);
-console.log(3 + + "3"); // Outputs: 6
+// console.log(1=='1')
+// console.log(1==='1')
+// console.log(1+'1')
+// console.log('1'+1)
+// console.log('1'+'1')
+// console.log(1+'1'+'1')
+// console.log(2*'1'*'5')
+// console.log(2*'1'+'5'+2)
+// console.log('1'+ +'5'+ +2);
+// console.log(1+ +'5'+ +2+100);
+// console.log(3 + + "3"); // Outputs: 6
+
+function experi(nu) {
+    return nu.includes('x')
+}
+
+console.log(experi('lol'))
+console.log(experi('lxol'))
+
+const calledup = function (){
+    console.log('ROMANIA')
+    console.log('RUSSIA')
+    par=document.getElementById('called')
+    par.textContent += 'lolron '    
+}
+
+// calledup()
+
+document.getElementById('callbut').onclick = calledup
