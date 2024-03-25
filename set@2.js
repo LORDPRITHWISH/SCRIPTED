@@ -2,7 +2,7 @@ import {factorial,lol} from './modules.js';
 
 function timed(func){
 
-    setTimeout(()=>{window.alert('wow');func(false)},3000)
+    // setTimeout(()=>{window.alert('wow');func(false)},3000)
     // console.log('yoo')
     
 }
@@ -14,7 +14,7 @@ function timer(){
 }
 
 console.log(factorial(10))
-window.alert(lol)
+// window.alert(lol)
 
 console.log('yoo')
 // setTimeout(()=>{window.alert('wow')},3000)
