@@ -51,15 +51,80 @@ a.forEach(ele => {
 
 
 
-var message = prompt("Enter your message", "‎");
-var counter = parseInt(prompt("How many Times ?", 10));
+let message = prompt("Enter your message", "");
+let counter = parseInt(prompt("How many Times ?", 10));
 window.InputEvent = window.Event || window.InputEvent;
-var event = new InputEvent("input", { bubbles: true });
-var textbox = document.getElementsByClassName("_13NKt copyable-text selectable-text")[1];
+let event = new InputEvent("input", { bubbles: true });
+let textbox = document.getElementsByClassName("to2l77zo gfz4du6o ag5g9lrv bze30y65 kao4egtt")[1];
 for (let index = 0; index < counter; index++) {
   textbox.innerHTML = message;
   textbox.dispatchEvent(event);
-  document.getElementsByClassName("_4sWnG")[0].click();
+  document.getElementsByClassName("tvf2evcx oq44ahr5 lb5m6g5c svlsagor p2rjqpw5 epia9gcq")[0].click();
 }
 
+
+
+
+let mes=document.getElementsByClassName("_3Uu1_")[0].firstElementChild.firstElementChild.firstElementChild.firstElementChild
+console.log(mes.textContent)
+
+
+
+
+
+// Find the text input field using its attributes or unique identifiers
+const inputField = document.querySelector('[role="textbox"]');
+
+// Check if the input field was found
+if (inputField) {
+  // Focus on the input field
+  inputField.focus();
+
+  // Programmatically set the value of the input field
+  inputField.value = "Text entered programmatically";
+
+  // Dispatch an "input" event to trigger any associated listeners
+  inputField.dispatchEvent(new Event('input', { bubbles: true }));
+} else {
+  console.error("Text input field not found.");
+}
+
+
+
+
+
+textbox = document.getElementsByClassName("to2l77zo gfz4du6o ag5g9lrv bze30y65 kao4egtt")[1];
+textbox.focus();
+textbox.value = "programmatically";
+textbox.dispatchEvent(new Event('input', { bubbles: true }));
+
+import { useEffect } from 'react';
+
+useEffect(() => {
+    textbox = document.getElementsByClassName("to2l77zo gfz4du6o ag5g9lrv bze30y65 kao4egtt")[1];
+    textbox.focus();
+    textbox.value = "programmatically";
+    textbox.dispatchEvent(new Event('input', { bubbles: true }));
+}, []); // Empty dependency array ensures the effect runs only once after component mount
+
+
+
+
+
+function sendMessage(message){
+  const mainEl = document.querySelector('#main')
+  const textareaEl = mainEl.querySelector('div[contenteditable="true"]')
+
+  if(!textareaEl) {
+    throw new Error('There is no opened conversation')
+  }
+
+  textareaEl.focus()
+  document.execCommand('insertText', false, message)
+  textareaEl.dispatchEvent(new Event('change', { bubbles: true }))
+
+  setTimeout(() => {
+    (mainEl.querySelector('[data-testid="send"]') || mainEl.querySelector('[data-icon="send"]')).click()
+  }, 100)
+}
 
